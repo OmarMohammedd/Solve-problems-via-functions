@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find the largest number</title>
+</head>
+<body>
+    <h1>Find the largest number</h1>
+    <p id="maxResult"></p>
+    
+    <script>
+        function findMax(numbers) {
+            let max = numbers[0];
+            for (let i = 1; i < numbers.length; i++) {
+                if (numbers[i] > max) {
+                    max = numbers[i];
+                }
+            }
+            return max;
+        }
+
+        const numbers2 = [1, 2, 3, 4, 5];
+        document.getElementById("maxResult").innerText = "The largest number: " + findMax(numbers2);
+    </script>
+</body>
+</html>

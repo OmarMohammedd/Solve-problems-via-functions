@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove duplicates</title>
+</head>
+<body>
+    <h1>Remove duplicates</h1>
+    <p id="uniqueResult"></p>
+    
+    <script>
+        function removeDuplicates(numbers) {
+            return [...new Set(numbers)];
+        }
+
+        const numbers3 = [1, 2, 2, 3, 4, 4, 5];
+        document.getElementById("uniqueResult").innerText = "Numbers without repetition: " + removeDuplicates(numbers3);
+    </script>
+</body>
+</html>

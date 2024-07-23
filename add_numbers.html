@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add numbers</title>
+</head>
+<body>
+    <h1>Add numbers</h1>
+    <p id="sumResult"></p>
+    
+    <script>
+        function sumArray(numbers) {
+            let sum = 0;
+            for (let i = 0; i < numbers.length; i++) {
+                sum += numbers[i];
+            }
+            return sum;
+        }
+
+        const numbers1 = [1, 2, 3, 4, 5];
+        document.getElementById("sumResult").innerText = "Sum of numbers: " + sumArray(numbers1);
+    </script>
+</body>
+</html>

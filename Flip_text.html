@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flip the text</title>
+</head>
+<body>
+    <h1>Flip the text</h1>
+    <p id="reverseResult"></p>
+    
+    <script>
+        function reverseString(str) {
+            return str.split("").reverse().join("");
+        }
+
+        const text = "hello world";
+        document.getElementById("reverseResult").innerText = "Inverted text: " + reverseString(text);
+    </script>
+</body>
+</html>
+
